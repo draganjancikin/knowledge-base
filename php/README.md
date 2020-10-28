@@ -10,7 +10,18 @@ Start built-in web server in PHP 5.4+:
 php -S localhost:8000
 ```
 
-## Printout command
+Content:
+
+* [Print-out commands](#print-out-commands)
+* [Variables](#variables)
+* [Comments](#coments)
+* [Internal function in PHP](#internal-function-in-php)
+* [Data tupes](#data-types)
+* [Operators](#operators)
+* [Conditional Statements](#conditional-statements)
+* [Loops](#loops)
+
+## Print-out commands
 
 ``` php
 echo "Hi there";
@@ -40,15 +51,10 @@ Use for explaining code.
 ## Internal function in PHP
 
 * strlen($str) - length of $str
-
 * str_word_count($str) - numer of words in $str
-
 * strrev($str) - reversing characters in $str
-
 * strpos($str, $x) - position of $x in $str
-
 * str_replace($x, $y, $str) - in $str look for $x and replace with $x
-
 * date()
 
 ## Data tupes
