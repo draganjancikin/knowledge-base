@@ -39,12 +39,17 @@ Use for explaining code.
 
 ## Internal function in PHP
 
-strlen($str) - length of $str
-str_word_count($str) - numer of words in $str
-strrev($str) - reversing characters in $str
-strpos($str, $x) - position of $x in $str
-str_replace($x, $y, $str) - in $str look for $x and replace with $x
-date();
+* strlen($str) - length of $str
+
+* str_word_count($str) - numer of words in $str
+
+* strrev($str) - reversing characters in $str
+
+* strpos($str, $x) - position of $x in $str
+
+* str_replace($x, $y, $str) - in $str look for $x and replace with $x
+
+* date()
 
 ## Data tupes
 
@@ -140,7 +145,7 @@ do {
 
 ```php
 for (i=0; i< 5; i++) {
-
+    # code
 }
 ```
 
