@@ -4,6 +4,6 @@
 
 [Link to Git-GitHub Section](/git-github/README.md)
 
-## PHP 
+## PHP
 
 [Link to PHP Section](/php/README.md)
