@@ -1,8 +1,8 @@
 # GIT - GITHUB
 
 Basic commands
-* Delete a Local GIT branch
-* Delete a remote GIT branch
+* [Delete a Local GIT branch](#delete-a-local-git-branch)
+* [Delete a remote GIT branch](#delete-a-remote-git-branch)
 
 ## Delete a Local GIT branch
 
