@@ -100,29 +100,17 @@ Use for explaining code.
 
 ## Operators
 
-* Aritmetic Operators
-  +, -, *, /, %, **
-
-* Assigment Operators
-  =, +=, -=, *=, /=, %=, **=
-
-* Comparison Operators
-  ==, ===, !=, !==, <, >, >=, =<, !, <>
-
-* Increment/Decrement Operators
-  ++, --
-
-* Logical Operaters
-  AND, &&, OR, ||, XOR
+* Aritmetic Operators: +, -, *, /, %, **
+* Assigment Operators: =, +=, -=, *=, /=, %=, **=
+* Comparison Operators: ==, ===, !=, !==, <, >, >=, =<, !, <>
+* Increment/Decrement Operators: ++, --
+* Logical Operaters: AND, &&, OR, ||, XOR
 
 ## Conditional Statements
 
 * if
-
 * if-else
-
 * if-elseif-else
-
 * switch
 
 ## Loops
