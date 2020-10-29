@@ -29,7 +29,12 @@ Content:
 
 PSR-0, PSR-1:
 
-* MUST start and end php code with <?php and ?>
+* MUST start and end php code with
+  ```php
+  <?php
+    # code
+  ?>
+  ```
 * MUST use only UTF-8 without BOM 
 * For properties SHOULD be used $StudlyCaps, $camelCase or $under_score names
 * Method named MUST be declared in camelCase()
