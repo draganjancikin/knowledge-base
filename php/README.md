@@ -32,7 +32,7 @@ PSR-0, PSR-1:
 * MUST start and end php code with
   ```php
   <?php
-    # code;
+    # code...
   ?>
   ```
 * MUST use only UTF-8 without BOM 
@@ -139,7 +139,7 @@ Use for explaining code.
 
 ```php
 while (statement){
-    # code
+    # code...
 }
 ```
 
@@ -149,15 +149,15 @@ while (statement){
 
 ```php
 do {
-    # code
+    # code...
 } while (statement)
 ```
 
 * For Loop
 
 ```php
-for (i=0; i< 5; i++) {
-    # code
+for (i=0; i < 5; i++) {
+    # code...
 }
 ```
 
