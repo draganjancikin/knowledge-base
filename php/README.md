@@ -32,7 +32,7 @@ PSR-0, PSR-1:
 * MUST start and end php code with
   ```php
   <?php
-    # code
+    # code;
   ?>
   ```
 * MUST use only UTF-8 without BOM 
