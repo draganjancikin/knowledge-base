@@ -20,6 +20,10 @@ Content:
 * [Operators](#operators)
 * [Conditional Statements](#conditional-statements)
 * [Loops](#loops)
+* [User defined Functions](#user-defined-functions)
+* [Include documents in PHP](#include-documents-in-php)
+* [Global and Local scope](#global-and-local-scope)
+* [Super Globals](#super-globals)
 
 ## Print-out commands
 
@@ -151,5 +155,32 @@ foreach ($variable as $key => $value) {
 }
 ```
 
+## User defined Functions
+
+General rule: "One function done one thing".
+
+```php
+function myFunction($arg) { # $arg is optional
+    # code
+}
+```
+
+## Include documents in PHP
+
+```php
+include 'path_to_file';
+include_once 'path_to_file';
+require 'path_to_file';
+require_once 'path_to_file';
+```
+
+## Global and Local scope
+
+Outside functions is Global scope.
+Inside functions is Local scope.
+
+## Super Globals
+
 youtube
-<https://www.youtube.com/watch?v=uOLGQ9ZoOSc&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=22>
+<https://www.youtube.com/watch?v=sBfSLbMnId0&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=24>
+<https://www.youtube.com/watch?v=MsgJc2Uy-BY&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=25>
