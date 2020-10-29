@@ -11,7 +11,7 @@ php -S localhost:8000
 ```
 
 Content:
-
+* [Basic coding standards](#basic-coding-standards)
 * [Print-out commands](#print-out-commands)
 * [Variables](#variables)
 * [Comments](#coments)
@@ -24,6 +24,15 @@ Content:
 * [Include documents in PHP](#include-documents-in-php)
 * [Global and Local scope](#global-and-local-scope)
 * [Super Globals](#super-globals)
+
+## Basic coding standards
+
+PSR-0, PSR-1:
+
+* MUST start and end php code with <?php and ?>
+* MUST use only UTF-8 without BOM 
+* For properties SHOULD be used $StudlyCaps, $camelCase or $under_score names
+* Method named MUST be declared in camelCase()
 
 ## Print-out commands
 
