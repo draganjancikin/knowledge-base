@@ -25,6 +25,7 @@ Content:
 * [Include documents in PHP](#include-documents-in-php)
 * [Global and Local scope](#global-and-local-scope)
 * [Super Globals](#super-globals)
+* [Classes](#classes)
 
 ## Basic coding standards
 
@@ -201,3 +202,8 @@ Inside functions is Local scope.
 youtube
 <https://www.youtube.com/watch?v=sBfSLbMnId0&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=24>
 <https://www.youtube.com/watch?v=MsgJc2Uy-BY&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=25>
+
+## Classes
+
+What is the difference between public, private, and protected?
+<https://stackoverflow.com/questions/4361553/what-is-the-difference-between-public-private-and-protected>
