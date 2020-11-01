@@ -183,6 +183,15 @@ function myFunction($arg) { # $arg is optional
 }
 ```
 
+Rule about arguments:
+
+* function can have argument or arguments, and this is optional
+* argument can be non-default, default or optional
+* non default arbument/s MUST be first
+* default argument must be on the right side of any non-default arguments
+* optional arguments must be equal NULL
+* max number of arguments is around five
+
 ## Include documents in PHP
 
 ```php
