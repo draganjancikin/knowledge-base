@@ -10,7 +10,7 @@ Start built-in web server in PHP 5.4+:
 php -S localhost:8000
 ```
 
-Content:
+Content index:
 
 * [Basic coding standards](#basic-coding-standards)
 * [Print-out commands](#print-out-commands)
