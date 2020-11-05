@@ -4,7 +4,7 @@ Content index:
 
 * [Composer](#composer)
 * [Drupal 8](#drupal-8)
-* [Git - GitHub](#git-github)
+* [Git-GitHub](#git-github)
 * [MySQL](#mysql)
 * [PHP](#php)
 
