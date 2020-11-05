@@ -16,7 +16,7 @@ Content index:
 
 [Link to Drupal 8 Section](/drupal8/README.md)
 
-## Git - GitHub
+## Git-GitHub
 
 [Link to Git-GitHub Section](/git-github/README.md)
 
