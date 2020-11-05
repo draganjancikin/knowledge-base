@@ -18,7 +18,7 @@ Content index:
 
 ## Git-GitHub
 
-[Link to Git - GitHub Section](/git--github/README.md)
+[Link to Git - GitHub Section](/git-github/README.md)
 
 ## MySQL
 
