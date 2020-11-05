@@ -1,5 +1,9 @@
 # KNOWLEDGE BASE
 
+## Composer
+
+[Link to Composer Section](/composer/README.md)
+
 ## Git - GitHub
 
 [Link to Git-GitHub Section](/git-github/README.md)
