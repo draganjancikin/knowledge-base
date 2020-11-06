@@ -49,6 +49,7 @@ git push origin --delete branch_name
 ```
 
 ## Working with Branches
+<https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/>
 
 Do not mess with the master. If you make changes to the master branch of a group project, very quickly there will be merge conflicts, weeping, rending of garments, and plagues of locusts. It’s that serious.  
 
@@ -74,3 +75,45 @@ git checkout -b branchNameHere
 ```
 
 * Step 3: Make changes in working branch 
+
+* Step 4: Stage and commit changes to working branch 
+
+```bash
+# add changes to stage
+git add name_of_changed_file
+# check status
+git status 
+# commit changes
+git commit -m "Description of changes we made"
+```
+
+* Step 5: Merge working branch changes
+
+Merge or move code, often from development to production.  
+We need to be in master(main) branch.  
+
+```bash
+# first move to main branch
+git checkput main
+# then merge workiong branch
+git merge working_branch_name --no-ff
+# then push changet to GitHub
+git push
+# after the branch merged, delete branch
+git branch -d working_branch_name
+```
+
+And that’s it! 
+
+* We successfully created a working branch separate from master. 
+* Made changes to it. 
+* Staged and committed those changes. 
+* Then merged them back into master on our local working environment. 
+* Then, finally, pushed everything up to GitHub so that all versions of our project are the same, everywhere!
+
+-------------------------------------------------------------------------------
+
+```bash
+git checkout -b development
+git push origin development
+```
