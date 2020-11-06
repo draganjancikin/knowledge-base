@@ -53,5 +53,5 @@ composer create-project drupal/recommended-project:8.9.8 my_site_name_dir
 will be create folder my_site_name_dir, and put inside all necessery Drupal 8 folders and files
 
 * Add modules and whatever other packages as dependencies
-* Use comopser to install (download) those packages to your project
+* Use composer to install (download) those packages to your project
 * Update composer.lock file
