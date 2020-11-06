@@ -51,9 +51,9 @@ git push origin --delete branch_name
 ## Working with Branches
 <https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/>
 
-Do not mess with the master. If you make changes to the master branch of a group project, very quickly there will be merge conflicts, weeping, rending of garments, and plagues of locusts. It’s that serious.  
+Do not mess with the master. If you make changes to the master branch of a group project, very quickly there will be merge conflicts, weeping, rending of garments, and plagues of locusts.  
 
-<mark>The master branch is deployable. It is your production code</mark>
+<mark>The master branch is deployable. It is your production code</mark>  
 
 Open project, version on your compouter, and cd into the directoru.
 
@@ -118,4 +118,5 @@ git checkout -b development
 git push origin development
 ```
 
+Very good tuto:
 https://www.thegeekstuff.com/2019/03/git-create-dev-branch-and-merge/
