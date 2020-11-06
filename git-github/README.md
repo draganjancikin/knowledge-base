@@ -117,3 +117,5 @@ And that’s it!
 git checkout -b development
 git push origin development
 ```
+
+https://www.thegeekstuff.com/2019/03/git-create-dev-branch-and-merge/
