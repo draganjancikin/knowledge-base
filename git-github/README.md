@@ -1,10 +1,12 @@
 # GIT - GITHUB
 
-Basic commands:
+## Basic commands:
 * [List existing branches](#list-existing-branches)
 * [Switch between branches](#switch-between-branches)
+* [Delete a Local GIT branch](#delete-a-local-git-branch)
+* [Delete a remote GIT branch](#delete-a-remote-git-branch)
 
-## List existing branches
+### List existing branches
 
 ```bash
 # list all branches (local and remote)
@@ -13,7 +15,7 @@ git branch -a
 git branch --list
 ```
 
-## Switch between branches
+### Switch between branches
 
 ```bash
 # switch to master
@@ -22,10 +24,25 @@ git checkout master
 git checkout branch_name
 ```
 
+### Delete a Local GIT branch
 
-* [Delete a Local GIT branch](#delete-a-local-git-branch)
-* [Delete a remote GIT branch](#delete-a-remote-git-branch)
+Delete local branch, only if you have already pushed and merged it with your remote branches.
 
+```bash
+git branch --delete branch_name
+```
+
+or
+
+```bash
+git branch -d branch_name
+```
+
+### Delete a remote GIT branch
+
+```bash
+git push origin --delete branch_name
+```
 
 ## Working with Branches (Git - GitHub)
 
@@ -53,25 +70,3 @@ git checkout -b branchNameHere
 ```
 
 * Step 3: Make changes in working branch 
-
-
-
-### Delete a Local GIT branch
-
-Delete local branch, only if you have already pushed and merged it with your remote branches.
-
-```bash
-git branch --delete branch_name
-```
-
-or
-
-```bash
-git branch -d branch_name
-```
-
-### Delete a remote GIT branch
-
-```bash
-git push origin --delete branch_name
-```
