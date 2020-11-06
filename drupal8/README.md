@@ -29,11 +29,13 @@ Composer package files comes from packagist.org.
 For Drupal 8, official composer package service is: <https://packages.drupal.org/8>.
 
 ```bach
+composer init
 composer install
-composer update
 composer require the_vendor_name/the_package_name:^X.x
 composer update
+composer outdated
 composer remove
+composer create-project
 ```
 
 First uninstall nodules from Drupal, then remove from project.
