@@ -1,5 +1,9 @@
 # GIT - GITHUB
 
+Content index:
+* [Basic commands](#basic-commands)
+* [Working with Branches](#working-with-branches)
+
 ## Basic commands:
 * [List existing branches](#list-existing-branches)
 * [Switch between branches](#switch-between-branches)
@@ -44,7 +48,7 @@ git branch -d branch_name
 git push origin --delete branch_name
 ```
 
-## Working with Branches (Git - GitHub)
+## Working with Branches
 
 Do not mess with the master. If you make changes to the master branch of a group project, very quickly there will be merge conflicts, weeping, rending of garments, and plagues of locusts. It’s that serious.  
 
