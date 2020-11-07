@@ -8,6 +8,7 @@ Content index:
 * [Git - GitHub](#git-github)
 * [MySQL](#mysql)
 * [PHP](#php)
+* [Virtual Hosts](#virtual-hosts)
 
 ## Composer
 
@@ -32,3 +33,7 @@ Content index:
 ## PHP
 
 [Link to PHP Section](/php/README.md)
+
+## Virtual Hosts
+
+[Link to Virtual Hosts Section](/virtual-hosts/README.md)
