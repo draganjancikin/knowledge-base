@@ -68,7 +68,7 @@ sudo a2ensite naziv_sajta.conf
 ## Step 7: Apache restart
 
 ```bash
-sudo service apache2 reload
+systemctl reload apache2
 ```
 
 ## Step 8: Check virtual hosts
