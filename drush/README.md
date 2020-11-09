@@ -22,15 +22,7 @@ en module_name
 ```
 
 1. clear-cache (cc) ------------------------------------------------------------
-When you are developing Drupal modules, you will often have to clear the cache (for example, when adding a new menu item in hook_menu). You can clear all caches with drush cc all, or choose a specific one with drush cc
-drush cc all
 2. pm-list (pml) ---------------------------------------------------------------
-This shows you a list of modules and themes that are available for your Drupal site. When I am working on a site, I often want to know if a particular module is enabled. You can use pml in combination with grep to see if the module you are looking for exists in the site.
-drush pm-list | grep modulename
-One of the advantages of using grep is that you don’t even need to know the full module name.
-For example:
-drush pm-list | grep media
-This will find any module or theme with media in the name. In my case, it returns Media, Media Desk, Media Internet Sources and Multimedia Editorial Element.
 3. feature-update (fu) ---------------------------------------------------------
 If you have a Feature and you change something that is stored in that Feature (e.g. you update a View), you will need to update it. This will export the components to code. Rather than manually exporting the feature in the admin interface, you can just run feature-update.
 drush feature-update feature_name
