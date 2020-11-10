@@ -3,14 +3,24 @@
 Commands:
 
 ```bash
+# _global ----------------------------------------------------------------------
+# list all drush commands
+list
+
+# site -------------------------------------------------------------------------
 # install Drupal site
 site:install
 
+# cache ------------------------------------------------------------------------
 # cache clear (cc all is deprecated)
-cc
-
+cache:clear (cc)
 # cache rebuild
-cr
+cache:rebuild (cr)
+
+# devel-generate ---------------------------------------------------------------
+# generate content
+devel-generate:content 10 (genc 10)
+devel-generate:content 20 --kill --bundles=client,county
 
 # list all Drupal modules
 pm-list
