@@ -25,10 +25,13 @@ devel-generate:content 20 --kill --bundles=client,county
 # list all Drupal modules
 pm-list
 pml
-pm-list | grep modul_ename
+pm-list | grep module_name
 
 # enabled Drupal module
 en module_name
+
+# enabled Drupal theme
+theme-enable theme_name
 ```
 
 1. clear-cache (cc) ------------------------------------------------------------
