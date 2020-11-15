@@ -9,11 +9,17 @@ Files:
 * composer.json
 * composer.lock
 
+Index:
+
+* [System Requirements](#system-requirements)
+* [Installation on Ubuntu](#installation-on-ubuntu)
+* [Commands](#commands)
+
 ## System Requirements
 
 Composer requires PHP 5.3.2+ to run.
 
-## Installation on Linux/Ubuntu
+## Installation on Ubuntu
 
 Globally:
 
@@ -25,3 +31,7 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === 'c31c1e292ad7be5f49291
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
+
+## Commands
+
+* require vendor_name/package_name
