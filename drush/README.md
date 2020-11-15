@@ -1,64 +1,110 @@
 # DRUSH
 
-Commands:
+## Commands
+
+* [Global](#global)
+* [Cache](#cache)
+* [Config](#config)
+* [Core](#core)
+* [pm](#pm)
+* [Site](#site)
+* [Theme](#theme)
+* [User](#user)
+
+### Global
 
 ```bash
-# _global ----------------------------------------------------------------------
-# list all drush commands
+# List available commands
 list
+```
 
-# site -------------------------------------------------------------------------
-# install Drupal site
-site:install
+### Cache
 
-# cache ------------------------------------------------------------------------
+```bash
 # cache clear (cc all is deprecated)
 cache:clear (cc)
 # cache rebuild
 cache:rebuild (cr)
+```
 
+### Config
+
+```bash
+# Set config value directly. Does not perform a config import.
+config:set (cset)
+# set default theme
+config:set system.theme default theme_name
+```
+
+### Core
+
+```bash
+# Run all cron hooks in all active modules for specified site
+core:cron (cron)
+```
+
+### pm
+
+```bash
+# list all Drupal modules
+pm:list (pml)
+pm:list | grep module_name
+pm:list --filter=search_term
+# Enable one or more modules
+pm:enable module_name (en)
+# Uninstall one or more modules and their dependent modules
+pm:uninstall (pmu)
+```
+
+### Site
+
+```bash
+# Install Drupal along with modules/themes/configuration/profile
+site:install (si, sin)
+```
+
+### Theme
+
+```bash
+# Enable one or more themes.
+theme:enable theme_name (then)
+```
+
+### User
+
+```bash
+#Display a one time login link for user ID 1, or another user.
+user:login (uli)
+```
+
+########################################################################################################################
+
+```bash
 # devel-generate ---------------------------------------------------------------
 # generate content
 devel-generate:content 10 (genc 10)
-devel-generate:content 20 --kill --bundles=client,county
-
-# list all Drupal modules
-pm-list
-pml
-pm-list | grep module_name
-
-# enabled Drupal module
-en module_name
-
-# enabled Drupal theme
-theme-enable theme_name
+devel-generate:content 20 --kill --bundles=content_type
+# generate vocabulars
+devel-generate:vocabs 10 (genv)
+devel-generate:terms  10 --bundles=vocabulary_name (gent)
 ```
 
-1. clear-cache (cc) ------------------------------------------------------------
-2. pm-list (pml) ---------------------------------------------------------------
-3. feature-update (fu) ---------------------------------------------------------
+* feature-update (fu) ---------------------------------------------------------
 If you have a Feature and you change something that is stored in that Feature (e.g. you update a View), you will need to update it. This will export the components to code. Rather than manually exporting the feature in the admin interface, you can just run feature-update.
 drush feature-update feature_name
-4. feature-revert (fr) ---------------------------------------------------------
+
+* feature-revert (fr) ---------------------------------------------------------
 If you decide you don’t want to keep the changes that you have made, you can run feature-revert to bring it back to the code version. This makes it easy to play around with various settings.
 drush feature-revert feature_name
-5. updatedb (updb) -------------------------------------------------------------
+
+* updatedb (updb) -------------------------------------------------------------
 This will run any pending database updates. This is normally required if you update module code and that module needs to update the database. This saves you from running updates via update.php.
 drush updatedb
-6. variable_get (vget)----------------------------------------------------------
+
+* variable_get (vget)----------------------------------------------------------
 I sometimes need to quickly see the value of a particular variable, so variable_get can be a real time saver.
 drush variable_get variable_name
-7. watchdog-show (ws)-----------------------------------------------------------
+
+* watchdog-show (ws)-----------------------------------------------------------
 Rather than going to the watchdog page to see errors and warnings, you only have to run watchdog_show.
 drush watchdog-show
-8. pm-download (dl)-------------------------------------------------------------
-I am often downloading new modules to try out. Rather than going to drupal.org to download them, I just run pml-download with the module or theme name.
-drush pm-download project_name
-9. pm-enable (en) & pm-disable (dis)--------------------------------------------
-Once a new module or theme has been downloaded, it needs to be enabled. I do this with the pm-enable command, rather than going to the module page.
-drush pm-enable project_name
-If I no longer want a particular module enabled, I run pm-disable. Like pm-enable, it saves me from going to the module page.
-drush pm-disable project_name
-10. pm-update (up)--------------------------------------------------------------
-Update Drupal core, modules and themes with pm-update.
-drush pm-update
