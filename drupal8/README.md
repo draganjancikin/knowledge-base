@@ -32,7 +32,10 @@ For Drupal 8, official composer package service is: <https://packages.drupal.org
 composer init
 composer install
 composer require the_vendor_name/the_package_name:^X.x
+
 composer update
+composer update the_vendor_name/the_package_name --with-dependencies
+
 composer outdated
 composer remove
 composer create-project
@@ -71,3 +74,22 @@ After instal Drupal 8 recomended next steps:
 * Add modules and whatever other packages as dependencies
 * Use composer to install (download) those packages to your project
 * Update composer.lock file
+
+## Recomended Modules
+
+* Admin Toolbar (drupal/admin_toolbar)
+      * submodul - Admin Toolbar Tools (admin_toolbar_tools)
+
+* Drush (drupal/drush) +
+
+* Pathauto (drupal/pathauto) +
+
+* Token (token) +
+
+* Simple Google Masp (simple_gmap) +
+
+* AddToAny (addtoany)
+
+* Scheduler (scheduler)
+
+* Devel (devel) +
