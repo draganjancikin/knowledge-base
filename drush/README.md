@@ -61,6 +61,8 @@ pm:uninstall (pmu)
 ```bash
 # Install Drupal along with modules/themes/configuration/profile
 site:install (si, sin)
+#example
+si --db-url=mysql://user_name:user_password@server_name:port/data_base_name
 ```
 
 ### Theme
