@@ -49,11 +49,11 @@ Prerequisities: Install Composer globaly.
 
 ### Step 1: Create a new Drupal 8 project - a new composer project
 
-```bash
-composer create-project drupal/recommended-project:8.9.8 my_site_name_dir
-```
+Next command will be create folder my_site_name_dir, and put inside all necessery Drupal 8 folders and files:
 
-will be create folder my_site_name_dir, and put inside all necessery Drupal 8 folders and files
+```bash
+composer create-project drupal/recommended-project:8.9.9 my_site_name_dir
+```
 
 After instal Drupal 8 recomended next steps:
 
@@ -69,7 +69,44 @@ After instal Drupal 8 recomended next steps:
   * docs: <https://www.drupal.org/docs/user_guide/en/index.html>
   * chat: <https://www.drupal.org/node/314178>
 
-### Step 2
+### Step 2: Add necessery permissions to file and folders
+
+```bash
+sudo chmod -R 755 web/sites/default
+sudo chmod -R 777 web/sites/default/files ???
+```
+
+### Step 3: Install Drush
+
+```bash
+composer require drush/drush --dev
+```
+
+### Step 4: Instal Drupal site
+
+```bash
+vendor/bin/drush site:install --db-url=mysql://user_name:user_password@server_name:port/data_base_name --account-name=user_1_name --account-pass=user_1_password
+```
+
+### Step 5: Add necessery permissions to file and folders
+
+```bash
+sudo chmod -R 777 web/sites/default/files
+```
+
+### Step 6: Enabled TRUSTED HOST SETTINGS
+
+Add code to default/settings.php
+
+```php
+$settings['trusted_host_patterns'] = [
+'^localhost$',
+'^192\.168\.00\.52$',
+'^127\.0\.0\.1$',
+];
+```
+
+### Next Steps
 
 * Add modules and whatever other packages as dependencies
 * Use composer to install (download) those packages to your project
@@ -77,19 +114,23 @@ After instal Drupal 8 recomended next steps:
 
 ## Recomended Modules
 
+* Drush (drupal/drush) ++
+
 * Admin Toolbar (drupal/admin_toolbar)
       * submodul - Admin Toolbar Tools (admin_toolbar_tools)
 
-* Drush (drupal/drush) +
+* Devel (devel) +
 
 * Pathauto (drupal/pathauto) +
 
-* Token (token) +
+--------------------------------------------------------------------------------
 
 * Simple Google Masp (simple_gmap) +
 
-* AddToAny (addtoany)
+* Token (token) +
+
+--------------------------------------------------------------------------------
 
 * Scheduler (scheduler)
 
-* Devel (devel) +
+* AddToAny (addtoany)
