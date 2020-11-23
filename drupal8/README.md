@@ -73,7 +73,6 @@ After instal Drupal 8 recomended next steps:
 
 ```bash
 sudo chmod -R 755 web/sites/default
-sudo chmod -R 777 web/sites/default/files ???
 ```
 
 ### Step 3: Install Drush
@@ -85,7 +84,7 @@ composer require drush/drush --dev
 ### Step 4: Instal Drupal site
 
 ```bash
-vendor/bin/drush site:install --db-url=mysql://user_name:user_password@server_name:port/data_base_name --account-name=user_1_name --account-pass=user_1_password
+vendor/bin/drush site:install --db-url=mysql://mysql_user_name:mysql_user_password@server_name:3306/data_base_name --account-name=user_1_name --account-pass=user_1_password
 ```
 
 ### Step 5: Add necessery permissions to file and folders
@@ -96,6 +95,10 @@ sudo chmod -R 777 web/sites/default/files
 
 ### Step 6: Enabled TRUSTED HOST SETTINGS
 
+```bash
+sudo chmod -R 777 web/sites/default/settings.php
+```
+
 Add code to default/settings.php
 
 ```php
@@ -104,6 +107,10 @@ $settings['trusted_host_patterns'] = [
 '^192\.168\.00\.52$',
 '^127\.0\.0\.1$',
 ];
+```
+
+```bash
+sudo chmod -R 444 web/sites/default/settings.php
 ```
 
 ### Next Steps
