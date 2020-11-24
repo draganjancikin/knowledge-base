@@ -1,10 +1,12 @@
 # GIT - GITHUB
 
 Content index:
+
 * [Basic commands](#basic-commands)
 * [Working with Branches](#working-with-branches)
 
-## Basic commands:
+## Basic commands
+
 * [List existing branches](#list-existing-branches)
 * [Switch between branches](#switch-between-branches)
 * [Delete a Local GIT branch](#delete-a-local-git-branch)
@@ -49,11 +51,12 @@ git push origin --delete branch_name
 ```
 
 ## Working with Branches
+
 <https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/>
 
 Do not mess with the master. If you make changes to the master branch of a group project, very quickly there will be merge conflicts, weeping, rending of garments, and plagues of locusts.  
 
-<mark>The master branch is deployable. It is your production code</mark>  
+The master branch is deployable. It is your production code.
 
 Open project, version on your compouter, and cd into the directoru.
 
@@ -74,15 +77,15 @@ We give the new branch a descriptive name.
 git checkout -b branchNameHere
 ```
 
-* Step 3: Make changes in working branch 
+* Step 3: Make changes in working branch
 
-* Step 4: Stage and commit changes to working branch 
+* Step 4: Stage and commit changes to working branch
 
 ```bash
 # add changes to stage
 git add name_of_changed_file
 # check status
-git status 
+git status
 # commit changes
 git commit -m "Description of changes we made"
 ```
@@ -103,12 +106,12 @@ git push
 git branch -d working_branch_name
 ```
 
-And that’s it! 
+And that’s it!
 
-* We successfully created a working branch separate from master. 
-* Made changes to it. 
-* Staged and committed those changes. 
-* Then merged them back into master on our local working environment. 
+* We successfully created a working branch separate from master.
+* Made changes to it.
+* Staged and committed those changes.
+* Then merged them back into master on our local working environment.
 * Then, finally, pushed everything up to GitHub so that all versions of our project are the same, everywhere!
 
 -------------------------------------------------------------------------------
@@ -119,4 +122,4 @@ git push origin development
 ```
 
 Very good tuto:
-https://www.thegeekstuff.com/2019/03/git-create-dev-branch-and-merge/
+<https://www.thegeekstuff.com/2019/03/git-create-dev-branch-and-merge/>
