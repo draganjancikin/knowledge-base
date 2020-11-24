@@ -1,6 +1,7 @@
 # CODING BEST PRACTICES
 
 <https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118>
+
 ## Commenting & Documentation
 
 ## Consistent Indentation
