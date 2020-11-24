@@ -2,6 +2,7 @@
 
 Content index:
 
+* [Coding Best Practices](#coding-best-practices)
 * [Composer](#composer)
 * [Drupal 8](#drupal-8)
 * [Drush](#drush)
@@ -9,6 +10,10 @@ Content index:
 * [MySQL](#mysql)
 * [PHP](#php)
 * [Virtual Hosts](#virtual-hosts)
+
+## Coding Best Practices
+
+[Link to Coding Best Practices Section](/coding-best-practices/README.md)
 
 ## Composer
 
