@@ -21,7 +21,9 @@ Content index:
 
 ## Drupal 8
 
-[Link to Drupal 8 Section](/drupal8/README.md)
+[Drupal 8](/drupal-8/README.md)
+
+[Build drupal site with git](/drupal-8/build-drupal-site-with-git.md)
 
 ## Drush
 
