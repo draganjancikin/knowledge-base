@@ -52,7 +52,7 @@ Prerequisities: Install Composer globaly.
 Next command will be create folder my_site_name_dir, and put inside all necessery Drupal 8 folders and files:
 
 ```bash
-composer create-project drupal/recommended-project:8.9.9 my_site_name_dir
+composer create-project drupal/recommended-project:8.9.10 my_site_name_dir
 ```
 
 After instal Drupal 8 recomended next steps:
@@ -121,7 +121,7 @@ sudo chmod -R 444 web/sites/default/settings.php
 
 ## Recomended Modules
 
-* Drush (drupal/drush) ++
+* Drush (drush/drush) ++
 
 * Admin Toolbar (drupal/admin_toolbar)
       * submodul - Admin Toolbar Tools (admin_toolbar_tools)
