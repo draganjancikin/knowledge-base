@@ -80,3 +80,19 @@ On your remote server
  # instal site with drush
  drush site:install --site-name= ...
 ```
+
+## Step 9: Adding Contributed Modules and Themes
+
+Simply download and install modules and themes to your site and add them to your main development branch.
+
+```bash
+ git add ...
+ git commit -m “message”
+ git push
+```
+
+Then, on your remote server while inside the dev directory:
+
+```bach
+ git pull ...
+```
