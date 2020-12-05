@@ -52,7 +52,7 @@ Prerequisities: Install Composer globaly.
 Next command will be create folder my_site_name_dir, and put inside all necessery Drupal 8 folders and files:
 
 ```bash
-composer create-project drupal/recommended-project:8.9.10 my_site_name_dir
+composer create-project drupal/recommended-project:8.9.11 my_site_name_dir
 ```
 
 After instal Drupal 8 recomended next steps:
@@ -84,7 +84,7 @@ composer require drush/drush --dev
 ### Step 4: Instal Drupal site
 
 ```bash
-vendor/bin/drush site:install --db-url=mysql://mysql_user_name:mysql_user_password@server_name:3306/data_base_name --account-name=user_1_name --account-pass=user_1_password
+vendor/bin/drush site:install --site-name=site_name --db-url=mysql://mysql_user_name:mysql_user_password@server_name:3306/data_base_name --account-name=user_1_name --account-pass=user_1_password
 ```
 
 ### Step 5: Add necessery permissions to file and folders
