@@ -8,6 +8,7 @@
 * [Core](#core)
 * [pm](#pm)
 * [Site](#site)
+* [SQL](#sql)
 * [Theme](#theme)
 * [User](#user)
 
@@ -30,10 +31,15 @@ cache:rebuild (cr)
 ### Config
 
 ```bash
-# Set config value directly. Does not perform a config import.
-config:set (cset)
-# set default theme
-config:set system.theme default theme_name
+ # Set config value directly. Does not perform a config import.
+ config:set (cset)
+ # set default theme
+ config:set system.theme default theme_name
+ # export configuration
+ config:export (cex)
+ # disable CSS/JS aggregation
+ drush -y config-set system.performance css.preprocess 0
+ drush -y config-set system.performance js.preprocess 0
 ```
 
 ### Core
@@ -63,6 +69,15 @@ pm:uninstall (pmu)
 site:install (si, sin)
 #example
 si --db-url=mysql://user_name:user_password@server_name:port/data_base_name
+```
+
+### SQL
+
+```bash
+# export database
+drush sql:dump
+# export database u .zip, with structure but not content od cache tables
+drush sql:dump --gzip --structure-tables-list="cache,cache_*" \ --result-file='../config/db_backup.sql'
 ```
 
 ### Theme
