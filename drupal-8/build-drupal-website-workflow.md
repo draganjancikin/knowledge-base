@@ -2,11 +2,12 @@
 
 1. [x] Create servers: LOCAL, DEV, PROD
 2. [x] Create GitHub repository
-3. [ ] Install first copy of the website on DEV server
+3. [x] Install first copy of the website on DEV server
+4. [x] Prepare LOCAL server and development
+5. [x] Deployment to DEV
+6. [x] Deployment to PROD
 
-4. Export site configuration
-
-## Create servers: LOCAL, DEV, PROD, and their respective databases
+## 1. Create servers: LOCAL, DEV, PROD, and their respective databases
 
 ### LOCAL
 
@@ -29,11 +30,11 @@
 * Mysql username: rsba1022_DraganP
 * Mysql password: Dragan73Prod
 
-## Create GitHub repository
+## 2. Create GitHub repository
 
 * <https://github.com/draganjancikin/ed-drupal-website>
 
-## Install first copy of the website on DEV server
+## 3. Install first copy of the website on DEV server
 
 * Create project in empty folder with composer
 * Add drush and install drupal
@@ -43,7 +44,7 @@
 * Switch to develop branch
 * Git add, commit and push code to GitHub
 
-## Prepare LOCAL server and development
+## 4. Prepare LOCAL server and development
 
 * Restore db_backup.sql from DEV
 * Git clone or pull
@@ -57,15 +58,14 @@
   * change permissions of web/sites/default to 755
   * make dir web/sites/default/files
   * change permissions of web/sites/default/files to 777
+
 * Start work
 * Finish work
 * Export configuration : drush cex -y
 
-------------------------------------------------------------------------------------------------------------------------
-
 * Git add, commit and push
 
-## Deployment to DEV
+## 5. Deployment to DEV
 
 * Restore db_backup_local.sql from LOCAL
 * git pull
@@ -75,6 +75,12 @@
 * Clear caches : drush cr
 * Test to see what logged out users see
 
-## Deployment to PROD
+## 6. Deployment to PROD
 
-* only for first deployment restore db_backup_dev.sql from DEV
+* Only for first deployment restore db_backup_dev.sql from DEV
+* Deploy the latest code
+* Apply database updates: login as admin and go to /update.php
+* Import configuration : /admin/config/development/configuration, review all changes make sense/are expected, then click `Import All`
+* Check that all new expected functionality has now been deployed
+* Clear caches : /admin/config/development/performance, then click `Clear All Caches`
+* Test to see what logged out users see
