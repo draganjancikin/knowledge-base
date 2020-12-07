@@ -15,17 +15,17 @@
 ### Global
 
 ```bash
-# List available commands
-list
+ # List available commands
+ list
 ```
 
 ### Cache
 
 ```bash
-# cache clear (cc all is deprecated)
-cache:clear (cc)
-# cache rebuild
-cache:rebuild (cr)
+ # cache clear (cc all is deprecated)
+ cache:clear (cc)
+ # cache rebuild
+ cache:rebuild (cr)
 ```
 
 ### Config
@@ -45,65 +45,65 @@ cache:rebuild (cr)
 ### Core
 
 ```bash
-# Run all cron hooks in all active modules for specified site
-core:cron (cron)
+ # Run all cron hooks in all active modules for specified site
+ core:cron (cron)
 ```
 
 ### pm
 
 ```bash
-# list all Drupal modules
-pm:list (pml)
-pm:list | grep module_name
-pm:list --filter=search_term
-# Enable one or more modules
-pm:enable module_name (en)
-# Uninstall one or more modules and their dependent modules
-pm:uninstall (pmu)
+ # list all Drupal modules
+ pm:list (pml)
+ pm:list | grep module_name
+ pm:list --filter=search_term
+ # Enable one or more modules
+ pm:enable module_name (en)
+ # Uninstall one or more modules and their dependent modules
+ pm:uninstall (pmu)
 ```
 
 ### Site
 
 ```bash
-# Install Drupal along with modules/themes/configuration/profile
-site:install (si, sin)
-#example
-si --db-url=mysql://user_name:user_password@server_name:port/data_base_name
+ # Install Drupal along with modules/themes/configuration/profile
+ site:install (si, sin)
+ #example
+ si --db-url=mysql://user_name:user_password@server_name:port/data_base_name
 ```
 
 ### SQL
 
 ```bash
-# export database
-drush sql:dump
-# export database u .zip, with structure but not content od cache tables
-drush sql:dump --gzip --structure-tables-list="cache,cache_*" \ --result-file='../config/db_backup.sql'
+ # export database
+ drush sql:dump
+ # export database u .zip, with structure but not content od cache tables
+ drush sql:dump --gzip --structure-tables-list="cache,cache_*" --result-file='../config/db_backup.sql'
 ```
 
 ### Theme
 
 ```bash
-# Enable one or more themes.
-theme:enable theme_name (then)
+ # Enable one or more themes.
+ theme:enable theme_name (then)
 ```
 
 ### User
 
 ```bash
-#Display a one time login link for user ID 1, or another user.
-user:login (uli)
+ #Display a one time login link for user ID 1, or another user.
+ user:login (uli)
 ```
 
 ########################################################################################################################
 
 ```bash
-# devel-generate ---------------------------------------------------------------
-# generate content
-devel-generate:content 10 (genc 10)
-devel-generate:content 20 --kill --bundles=content_type
-# generate vocabulars
-devel-generate:vocabs 10 (genv)
-devel-generate:terms  10 --bundles=vocabulary_name (gent)
+ # devel-generate ---------------------------------------------------------------
+ # generate content
+ devel-generate:content 10 (genc 10)
+ devel-generate:content 20 --kill --bundles=content_type
+ # generate vocabulars
+ devel-generate:vocabs 10 (genv)
+ devel-generate:terms  10 --bundles=vocabulary_name (gent)
 ```
 
 * feature-update (fu) ---------------------------------------------------------
