@@ -27,6 +27,8 @@ Content index:
 * [Super Globals](#super-globals)
 * [Classes](#classes)
 
+* [Namespace and Autoload](#namespase-and-autoload)
+
 ## Basic coding standards
 
 PSR-0, PSR-1:
@@ -219,3 +221,8 @@ What is the difference between public, private, and protected?
 
 
 <https://code.tutsplus.com/courses/php-fundamentals>
+
+
+## Namespace and Autoload
+
+<https://www.youtube.com/watch?v=JIfNaqA4STg>
