@@ -132,7 +132,7 @@ sudo chmod -R 444 web/sites/default/settings.php
 
 --------------------------------------------------------------------------------
 
-* Simple Google Masp (simple_gmap) +
+* Simple Google Maap (simple_gmap) +
 
 * Token (token) +
 
@@ -140,4 +140,4 @@ sudo chmod -R 444 web/sites/default/settings.php
 
 * Scheduler (scheduler)
 
-* AddToAny (addtoany)
+* AddToAny (addtoany) ???
