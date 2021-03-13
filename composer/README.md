@@ -36,6 +36,8 @@ php -r "unlink('composer-setup.php');"
 
 ### require
 
+Adds a new packages to the composer.json file in project (current) directory. If composer.json no exists one will be created.
+
 ```bash
 composer require vendor_name/package_name
 ```
