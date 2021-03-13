@@ -52,7 +52,7 @@ Prerequisities: Install Composer globaly.
 Next command will be create folder my_site_name_dir, and put inside all necessery Drupal 8 folders and files:
 
 ```bash
-composer create-project drupal/recommended-project:8.9.11 my_site_name_dir
+composer create-project drupal/recommended-project:8.9.13 my_site_name_dir
 ```
 
 After instal Drupal 8 recomended next steps:
