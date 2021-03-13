@@ -123,12 +123,12 @@ sudo chmod -R 444 web/sites/default/settings.php
 
 * Drush (drush/drush) ++
 
-* Admin Toolbar (drupal/admin_toolbar)
-      * submodul - Admin Toolbar Tools (admin_toolbar_tools)
+* Admin Toolbar (drupal/admin_toolbar) ++
+      * submodul - Admin Toolbar Tools (admin_toolbar_tools) ++
 
 * Devel (devel) +
 
-* Pathauto (drupal/pathauto) +
+* Pathauto (drupal/pathauto) ++
 
 --------------------------------------------------------------------------------
 
@@ -141,3 +141,5 @@ sudo chmod -R 444 web/sites/default/settings.php
 * Scheduler (scheduler)
 
 * AddToAny (addtoany) ???
+
+* Module Filter (module_filter)
