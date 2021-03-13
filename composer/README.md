@@ -34,4 +34,19 @@ php -r "unlink('composer-setup.php');"
 
 ## Commands
 
-* require vendor_name/package_name
+### require
+
+```bash
+composer require vendor_name/package_name
+```
+
+### self-update
+
+To update Composer itself to the latest version
+
+```bash
+# If you have installed Composer for your entire system (global installation), you may have to run the command with root privileges
+composer sudo -H composer self-update
+# If you would like to instead update to a specific release specify it
+composer sudo -H composer self-update 2.0.11
+```
