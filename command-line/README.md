@@ -160,3 +160,40 @@ $ sudo chown user_name file_name
 # change user and group ownership
 $ sudo chmod user_name:group_name file_name
 ```
+
+## Using Zip and Tar on Command Line
+
+```bash
+# create zip file
+$ zip name_of_zip_file.zip name_of_file_that_zipped
+
+# unzip
+$ unzip name_of_zip_file.zip
+
+# create gzip file
+$ gzip name_of_file_that_zipped
+
+# gunzip, after gunzip gzip file is gone
+$ gunzip name_of_gzip_file.gz
+
+```
+
+### Archieving with Tar
+
+```bash
+# tar
+$ tar -cvf name_of_new_file.tar [list of file]
+
+# untar
+$ tar -xvf name_of_tar_file.tar
+
+# archieving and compresion (use gzip)
+$ tar -cvzf name_of_new_file.tgz [list of file]
+
+# unzip
+$tar -xvzf name_of_tgz_file.tgz
+```
+
+"c" - create
+"v" - verbose
+"f" - file
