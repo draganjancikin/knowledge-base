@@ -100,6 +100,8 @@ $ rm -r dir_name
 
 ## Dealing with Command Line Permissions
 
+<https://drupalize.me/videos/dealing-command-line-permissions?p=1149>
+
 ```bash
 # After typing command
 $ ls -al
@@ -162,6 +164,8 @@ $ sudo chmod user_name:group_name file_name
 ```
 
 ## Using Zip and Tar on Command Line
+
+<https://drupalize.me/videos/using-zip-and-tar-command-line?p=1149>
 
 ```bash
 # create zip file
