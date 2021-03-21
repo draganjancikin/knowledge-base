@@ -201,3 +201,10 @@ $tar -xvzf name_of_tgz_file.tgz
 "c" - create
 "v" - verbose
 "f" - file
+
+## Creating Symbolic Links on Command Line
+
+```bash
+#
+$ ln -s [path] new_name
+```
