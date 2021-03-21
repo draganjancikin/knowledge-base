@@ -47,3 +47,17 @@ $ clear
 Hint 1: Start typing and then hit Tab button and command prompt will be complete thing. If exist more then one thing with same letters hit Tab button again and will be apear all things with same letter.
 
 Hint 2: Case sensitive is important.
+
+## Copy, Move, Delete on Command Line
+
+<https://drupalize.me/videos/copy-move-delete-command-line?p=1149>
+
+### Make a new File and Directory
+
+```bash
+# make a new file
+$ touch file_name
+
+# make a new directory
+$ mkdir dir_name
+```
