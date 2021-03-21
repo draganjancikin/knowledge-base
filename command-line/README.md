@@ -61,3 +61,39 @@ $ touch file_name
 # make a new directory
 $ mkdir dir_name
 ```
+
+### Copy
+
+```bash
+# copy file to new one
+$ cp dir_name/file_name another_dir_name
+
+# copy directory dir_name to new one dir_name_of_new_dir
+$ cp -r dir_name/ dir_name_of_new_dir
+```
+
+### Move
+
+```bash
+# move file from one directory to another
+$ mv dir_name/file_name another_dir_name
+
+# move file to directory level up
+$ mv dir_name/file_name ../another_dir_name
+
+# move all file that begin with some charachters
+$ mv 0* dir_name
+
+# rename file with mv command
+$ mv file_name new_file_name
+```
+
+### Delete
+
+```bash
+# remove file
+$ rm file_name
+
+# remove directory
+$ rm -r dir_name
+```
