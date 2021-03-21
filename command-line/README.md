@@ -97,3 +97,66 @@ $ rm file_name
 # remove directory
 $ rm -r dir_name
 ```
+
+## Dealing with Command Line Permissions
+
+```bash
+# After typing command
+$ ls -al
+```
+
+```bash
+# Get on screen something like this:
+drwxr-xr-x 5 dragan dragan 4096 мар 21 14:51 .
+drwxr-xr-x 9 dragan dragan 4096 мар 21 14:50 ..
+drwxr-xr-x 2 dragan dragan 4096 мар 21 14:51 dir_1
+drwxr-xr-x 2 dragan dragan 4096 мар 21 14:51 dir_2
+drwxr-xr-x 2 dragan dragan 4096 мар 21 14:51 dir_3
+-rw-r--r-- 1 dragan dragan    0 мар 21 14:51 file_1
+-rw-r--r-- 1 dragan dragan    0 мар 21 14:51 file_2
+-rw-r--r-- 1 dragan dragan    0 мар 21 14:51 file_3
+```
+
+The first charachter is type (d)
+Next three charachter is permissons for user (rwx)
+Next three charachter is permissons for group (r-x)
+And last three charachter is permissons for everybody else (r-x)
+
+"d" - directory
+"r" - read
+"w" - write
+"x" - execute
+
+### Change Permissions
+
+```bash
+# remove permissons
+$ chmod [param_one]-[param_two] file_name
+
+# add permissons
+$ chmod [param_one]+[param_two] file_name
+
+# set permissions
+$chmod a=r file_name
+```
+
+Param one:
+
+* u - user
+* g - group
+* o - other
+* a - all
+
+Param two is "r" or "w" or "x".
+
+### Change Ownership
+
+Super User Do - sudo
+
+```bash
+# change ownership on the file with sudo
+$ sudo chown user_name file_name
+
+# change user and group ownership
+$ sudo chmod user_name:group_name file_name
+```
