@@ -11,7 +11,7 @@ Docksal zna da se sukobi sa Apache-em oko portova, tako da bi bilo dobro da stop
 $ bash <(curl -fsSL https://get.docksal.io)
 ```
 
-## Setup Existing Project
+## Setup Existing Project on Local
 
 Steps:
 
@@ -22,3 +22,12 @@ Steps:
 * copy .htaccess to web and settings.local.php to web/sites/default iz .docksal foldera
 * fin db import /putanja-do-baze/naziv-fajla.sql
 * fin drush cr
+
+## Commands: fin
+
+```bash
+# start project
+$ fin start
+# stop project
+$ fin stop
+```
