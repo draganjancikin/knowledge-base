@@ -52,12 +52,16 @@
 ### pm
 
 ```bash
- # list all Drupal modules
- pm:list (pml)
- pm:list | grep module_name
- pm:list --filter=search_term
+# list all Drupal modules
+$ pm:list (pml)
+$ pm:list | grep module_name
+$ pm:list --filter=search_term
+# list all module that enabled and no core modules
+$ pm:list --type=module --no-core --status=enabled
+
  # Enable one or more modules
  pm:enable module_name (en)
+ 
  # Uninstall one or more modules and their dependent modules
  pm:uninstall (pmu)
 ```
