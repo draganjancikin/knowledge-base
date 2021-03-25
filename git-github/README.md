@@ -32,6 +32,7 @@ Here is a basic overview of how Git works:
 * [Switch between branches](#switch-between-branches)
 * [Delete a Local GIT branch](#delete-a-local-git-branch)
 * [Delete a remote GIT branch](#delete-a-remote-git-branch)
+* [Delete a commit](#delete-a-commit)
 * [Push Commits to a Remote GIT branch](#push-commits-to-a-remote-git-branch)
 
 ### Show an set Git Username and Email
@@ -84,6 +85,13 @@ git branch -d branch_name
 
 ```bash
 git push origin --delete branch_name
+```
+
+### Delete a Commit
+
+```bash
+# 
+$ git reset HEAD~number_of_commits
 ```
 
 ### Push Commits to a Remote GIT branch
