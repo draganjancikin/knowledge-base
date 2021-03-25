@@ -1,6 +1,14 @@
 # Docksal
 
-## Instalation on Linux/Ubuntu
+## Content Index
+
+* [Installation on Linux-Ubuntu](#installation-on-linux-ubuntu)
+* [Setup an Existing Project on Local](#setup-an-existing-project-on-local)
+* [Commands](#commands)
+* [Update Drupal Core and Contrib Modules](#update-drupal-core-and-contrib-modules)
+* [Delete Local and Remote Commits](#delete-local-and-remote-commits)
+
+## Installation on Linux-Ubuntu
 
 <https://docksal.io/installation#linux-supported>
 
@@ -11,7 +19,7 @@ Docksal zna da se sukobi sa Apache-em oko portova, tako da bi bilo dobro da stop
 $ bash <(curl -fsSL https://get.docksal.io)
 ```
 
-## Setup Existing Project on Local
+## Setup an Existing Project on Local
 
 Steps:
 
@@ -23,7 +31,7 @@ Steps:
 * fin db import /putanja-do-baze/naziv-fajla.sql
 * fin drush cr
 
-## Commands: fin
+## Commands
 
 ```bash
 # start project
@@ -32,7 +40,7 @@ $ fin start
 $ fin stop
 ```
 
-## Update Drupal Core and Modules
+## Update Drupal Core and Contrib Modules
 
 ```bash
 # check outdated 
@@ -67,3 +75,17 @@ Module update:
 * backup db from dev
 * db update on dev
 * obeležiti testeru da istestira
+
+## Delete Local and Remote Commits
+
+```bash
+# delete local commits
+$ git reset HEAD~number_of_commits_that_deleting
+
+# reverting composer.lock on start state 
+$ git checkout composer.lock
+
+# push changes to repository
+# "+" before master mean "force"
+$ git push origin +master
+```
