@@ -27,10 +27,26 @@ Here is a basic overview of how Git works:
 
 ## Basic commands
 
+* [Show and Set Git Username and Email](#show-and-set-git-username-and-email)
 * [List existing branches](#list-existing-branches)
 * [Switch between branches](#switch-between-branches)
 * [Delete a Local GIT branch](#delete-a-local-git-branch)
 * [Delete a remote GIT branch](#delete-a-remote-git-branch)
+* [Push Commits to a Remote GIT branch](#push-commits-to-a-remote-git-branch)
+
+### Show an set Git Username and Email
+
+```bash
+# show global credentials
+$ git config --global --list
+# show credentials per project
+$ git config --list
+
+# set username
+$ git config --global user.name "your_user_name"
+# set email
+$ git config --global user.email "your_email"
+```
 
 ### List existing branches
 
@@ -68,6 +84,15 @@ git branch -d branch_name
 
 ```bash
 git push origin --delete branch_name
+```
+
+### Push Commits to a Remote GIT branch
+
+```bash
+#
+git push -u origin master
+#
+git push -u "url_to_your_repository" master
 ```
 
 ## Working with Branches
