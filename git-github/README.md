@@ -2,10 +2,34 @@
 
 Content index:
 
-* [Basic commands](#basic-commands)
-* [Working with Branches](#working-with-branches)
+* [Git](#git)
+  * [Instalation](#instalation)
+  * [Setting](#setting)
+  * [Basic commands](#basic-commands)
+  * [Working with Branches](#working-with-branches)
 
 ## Git
+
+### Instalation
+
+Instalation on Debian/Ubuntu:
+
+```bash
+$ apt-get install git
+```
+
+### Setting
+
+```bash
+# Setting user name
+$ git config --global user.name "John Doe"
+# Setting email
+$ git config --global user.email johndoe@example.com
+# show global credentials
+$ git config --global --list
+# List you settings and where they are coming from
+$ git config --global --list --show-origin
+```
 
 ### Git Basics
 
@@ -34,20 +58,6 @@ Here is a basic overview of how Git works:
 * [Delete a remote GIT branch](#delete-a-remote-git-branch)
 * [Delete a commit](#delete-a-commit)
 * [Push Commits to a Remote GIT branch](#push-commits-to-a-remote-git-branch)
-
-### Show an set Git Username and Email
-
-```bash
-# show global credentials
-$ git config --global --list
-# show credentials per project
-$ git config --list
-
-# set username
-$ git config --global user.name "your_user_name"
-# set email
-$ git config --global user.email "your_email"
-```
 
 ### List existing branches
 
