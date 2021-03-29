@@ -7,6 +7,7 @@
 * [What is SSH](#what-is-ssh)
 * [How to Install an OpenSSH server](#how-to-install-an-openssh-server)
 * [How to Generate a SSH key](#how-to-generate-a-ssh-key)
+* [Back up MySQL via SSH](#back-up-mysql-via-ssh)
 
 ## What is SSH?
 
@@ -47,6 +48,20 @@ $ sudo systemctl status ssh
 ```bash
 # Generate a RSA key pair
 $ ssh-keygen
+```
 
+## Back up MySQL via SSH
 
+Use mysqldump to export your database:
+
+```bash
+# first login to remote server
+
+# username is the username you can log in to the database with
+# database_name is the name of the database to export
+# data-dump.sql is the file in the current directory that stores the output.
+$ mysqldump -u username -p database_name > data-dump.sql
+
+# download db with secure copy (scp)
+$ scp -Pport_number user_name@host_name:folder_name/file_name.sql /folder_name/file_name.sql
 ```
