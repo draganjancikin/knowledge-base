@@ -40,7 +40,10 @@ $ sudo systemctl status ssh
 ## How to Connect via SSH
 
 ```bash
-
+# 
+$ ssh your_username@host_ip_address
+# 
+$ ssh -Pnumber_of_port your_username@host_ip_address
 ```
 
 ## How to Generate a SSH key
