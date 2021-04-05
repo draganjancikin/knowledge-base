@@ -7,6 +7,7 @@
 * [Commands](#commands)
 * [Update Drupal Core and Contrib Modules](#update-drupal-core-and-contrib-modules)
 * [Delete Local and Remote Commits](#delete-local-and-remote-commits)
+* [Create a new Project](#create-a-new-project)
 
 ## Installation on Linux-Ubuntu
 
@@ -92,4 +93,14 @@ $ git checkout composer.lock
 # push changes to repository
 # "+" before master mean "force"
 $ git push origin +master
+```
+
+## Create a new Project
+
+```bash
+# Initialisation a new project in folder
+$ fin init
+
+# Create a project using a boilerplate
+$ fin project create
 ```
