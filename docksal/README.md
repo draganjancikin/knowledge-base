@@ -38,6 +38,10 @@ Steps:
 $ fin start
 # stop project
 $ fin stop
+# list all project (active amd inactice)
+$ fin project list -a
+# Quick start project using a boilerplate
+$ fin project create
 ```
 
 ## Update Drupal Core and Contrib Modules
