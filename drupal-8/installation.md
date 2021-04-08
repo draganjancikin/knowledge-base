@@ -23,6 +23,10 @@ After that:
 
 ## Setup an Existing Project on Local
 
+Prerequisites:
+
+* Installed Docksal ( [Read more](../docksal/installation.md) )
+
 Steps:
 
 * Clone Project from Repository
