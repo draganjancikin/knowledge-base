@@ -1,4 +1,4 @@
-# Docksal: Installation
+# Docksal: Installation on Ubuntu/Debian Linux
 
 System prerequisites:
 * RAM requirement: 8GB or more.
