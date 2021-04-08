@@ -1,4 +1,4 @@
-# KNOWLEDGE BASE
+# Knowledge Base
 
 Content index:
 
