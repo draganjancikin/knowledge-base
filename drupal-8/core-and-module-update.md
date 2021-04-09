@@ -1,33 +1,52 @@
 # Drupal 8: Core and Module Update
 
-```bash
-# Check outdated modules. 
-$ fin composer outdated "drupal/*"
+Steps:
+1. Enable "Update Manager" module
+2. Check "/admin/reports/updates" for available updates
+    - Optional you can check outdated modules in command line
+  
+    ```bash
+    # Check outdated modules in Docksal. 
+    $ fin composer outdated "drupal/*"
+    ```
 
-# Update Drupal core.
-$ fin composer require drupal/core-recommended:8.9.13 drupal/core:8.9.13 --update-with-all-dependencies
+3. In project on LOCAL make a separate branch for updates LOCAL.branch_for_updates
 
-# Update Drupal module.
-$ fin composer update drupal/modulename --with-dependencies
-```
+    ```bash
+    $ git checkout -b branch_for_updates
+    ```
 
-First Drupal core update:
+4. First update Drupal Core
+  
+    ```bash
+    # Update Drupal core in Docksal.
+    $ fin composer require drupal/core-recommended:8.9.13 drupal/core:8.9.13 --update-with-all-dependencies
+    # Clear cache.
+    $ fin drush cr
+    ```
+    - Check site.
 
-* make a new branch
-* update Drupal core
-* clear cache
-* check site
+5. Then update active modules with security update
 
-On link <http://psc.docksal/admin/reports/updates> is avaible updates. Need to enable Update Manager module.
+    * Always check Release note for important updates.
+  
+    ```bash
+    # Update Drupal module in Docksal.
+    $ fin composer update drupal/modulename --with-dependencies
+    # Clear cache.
+    $ fin drush cr
 
-Module update:
+    ```
+    * Check site.
+    ```bash
+    # 
+    $ git add file_name
+    #
+    $ git commit -m "Commit message"
+    ```
 
-* make a new branch
-* check Release Notes for important updates
-* update module
-* clear cache
-* check site
-* commit
+Other steps:
+
 * after all updates merge to dev if exist, if not merge to master
 * deploy to dev
 * backup db from dev
