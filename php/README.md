@@ -181,10 +181,10 @@ foreach ($variable as $key => $value) {
 Frequently used internal functions:
 
 * strlen($str) - length of $str
-* str_word_count($str) - numer of words in $str
+* str_word_count($str) - number of words in $str
 * strrev($str) - reversing characters in $str
 * strpos($str, $x) - position of $x in $str
-* str_replace($x, $y, $str) - in $str look for $x and replace with $x
+* str_replace($x, $y, $str) - in $str look for $x and replace with $y
 * date()
 
 ## User defined Functions
