@@ -12,6 +12,7 @@ Content index:
 * [Loops](#loops)
 * [Internal function in PHP](#internal-function-in-php)
 * [User defined Functions](#user-defined-functions)
+* [Include documents in PHP](#include-documents-in-php)
 
 ## Introduction
 
@@ -205,3 +206,12 @@ Rule about arguments:
 * default argument must be on the right side of any non-default arguments
 * optional arguments must be equal NULL
 * max number of arguments is around five
+
+## Include documents in PHP
+
+```php
+include 'path_to_file';
+include_once 'path_to_file';
+require 'path_to_file';
+require_once 'path_to_file';
+```
