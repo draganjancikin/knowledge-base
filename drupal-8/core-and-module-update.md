@@ -10,7 +10,7 @@ Steps:
     $ fin composer outdated "drupal/*"
     ```
 
-3. In project on LOCAL make a separate branch for updates LOCAL.branch_for_updates
+3. In project on LOCAL make a separate branch for updates
 
     ```bash
     $ git checkout -b branch_for_updates
@@ -25,6 +25,7 @@ Steps:
     $ fin drush cr
     ```
     - Check site.
+    * Commit changes ([Read more](../git/README.md))
 
 5. Then update active modules with security update
 
@@ -38,12 +39,11 @@ Steps:
 
     ```
     * Check site.
-    ```bash
-    # 
-    $ git add file_name
-    #
-    $ git commit -m "Commit message"
-    ```
+    * Commit changes ([Read more](../git/README.md))
+
+6. Then update active modules with optional update
+
+7. Then update inactive modules with optional update
 
 Other steps:
 
