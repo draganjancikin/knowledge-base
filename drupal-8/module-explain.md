@@ -61,3 +61,14 @@ Content index:
 * Views UI (views_ui)
 
 ## Contrib Modules
+
+### Admin Toolbar (admin_toolbar)
+  
+Improve the default administration menu, transform it into a drop-down menu.
+  * Admin Toolbar Extra Tools (admin_toolbar_tools)  
+    Sub-module, add some extra links to Admin Toolbar (flush caches, run cron, etc...)
+  * Admin Toolbar Search (admin_toolbar_search)  
+    Sub-module, add search to Admin Toolbar
+### Advanced Link (editor_advanced_link)
+
+Enhances the link Dialog in CKEditor. Allows to define the following attributes: title, class, id, target, rel.
