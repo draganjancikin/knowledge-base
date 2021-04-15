@@ -13,6 +13,13 @@ Content index:
 * [Internal function in PHP](#internal-function-in-php)
 * [User defined Functions](#user-defined-functions)
 * [Include documents in PHP](#include-documents-in-php)
+* [Global and Local scope](#global-and-local-scope)
+
+In progress:
+
+* [Super Globals](#super-globals)
+* [Classes](#classes)
+* [Namespace and Autoload](#namespase-and-autoload)
 
 ## Introduction
 
@@ -215,3 +222,25 @@ include_once 'path_to_file';
 require 'path_to_file';
 require_once 'path_to_file';
 ```
+
+## Global and Local scope
+
+Outside functions is Global scope.
+Inside functions is Local scope.
+
+## Super Globals
+
+youtube
+<https://www.youtube.com/watch?v=sBfSLbMnId0&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=24>
+<https://www.youtube.com/watch?v=MsgJc2Uy-BY&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-&index=25>
+
+## Classes
+
+What is the difference between public, private, and protected?
+<https://stackoverflow.com/questions/4361553/what-is-the-difference-between-public-private-and-protected>
+
+<https://code.tutsplus.com/courses/php-fundamentals>
+
+## Namespace and Autoload
+
+<https://www.youtube.com/watch?v=JIfNaqA4STg>
