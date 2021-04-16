@@ -64,7 +64,7 @@ Content index:
 
 * [Admin Toolbar (admin_toolbar)](#admin-toolbar-admin_toolbar)
 * [Advanced Link (editor_advanced_link)](#advanced-link-editor_advanced_link)
-* [](#)
+* [Chaos Tool Suite (ctools)](#chaos-tool-suite-ctools)
 
 ### Admin Toolbar (admin_toolbar)
   
@@ -78,4 +78,6 @@ Improve the default administration menu, transform it into a drop-down menu.
 
 Enhances the link Dialog in CKEditor. Allows to define the following attributes: title, class, id, target, rel.
 
-### 
+### Chaos Tool Suite (ctools)
+
+This suite is primarily a set of APIs and tools to improve the developer experience.
