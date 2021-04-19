@@ -8,14 +8,20 @@ Content index:
 ## Configuration
 
 ```bash
-# Configure global username and email
+# Create system config for username and email
+$ git config --system user.name "John Doe"
+$ git config --system user.email "john.doe@gmail.com"
+
+# Create global config for username and email
 $ git config --global user.name "John Doe"
 $ git config --global user.email "john.doe@gmail.com"
 
-# Configure project username and email. Execute commands under project's directory
+# Create project specific config for username and email. Execute commands under project's directory
 $ git config user.name "John Doe"
 $ git config user.email "john.doe@gmail.com"
 ```
+
+Project overrides global and global overrides system config.
 
 ## Commands
 
