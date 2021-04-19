@@ -2,10 +2,24 @@
 
 Content index:
 
-* [Configuration](#configuration)
+* [Introduction](#introduction)
+* [Instalation](#instalation)
+* [Settings](#settings)
 * [Commands](#commands)
 
-## Configuration
+### Introduction
+
+Git is distributed: every developer has the full history of their code repository locally.
+
+## Instalation
+
+Instalation on Debian/Ubuntu:
+
+```bash
+$ apt-get install git
+```
+
+## Settings
 
 ```bash
 # Create system config for username and email
@@ -22,6 +36,15 @@ $ git config user.email "john.doe@gmail.com"
 ```
 
 Project overrides global and global overrides system config.
+
+View config:
+
+```bash
+# show global credentials
+$ git config --global --list
+# List you settings and where they are coming from
+$ git config --global --list --show-origin
+```
 
 ## Commands
 
