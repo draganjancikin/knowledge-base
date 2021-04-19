@@ -2,7 +2,20 @@
 
 Content index:
 
+* [Configuration](#configuration)
 * [Commands](#commands)
+
+## Configuration
+
+```bash
+# Configure global username and email
+$ git config --global user.name "John Doe"
+$ git config --global user.email "john.doe@gmail.com"
+
+# Configure project username and email. Execute commands under project's directory
+$ git config user.name "John Doe"
+$ git config user.email "john.doe@gmail.com"
+```
 
 ## Commands
 
