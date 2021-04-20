@@ -5,9 +5,9 @@ Content index:
 * [Introduction](#introduction)
 * [Instalation](#instalation)
 * [Settings](#settings)
-* [Commands](#commands)
+* [Basic commands](#basic-commands)
 
-### Introduction
+## Introduction
 
 Git is distributed: every developer has the full history of their code repository locally.
 
@@ -20,6 +20,8 @@ $ apt-get install git
 ```
 
 ## Settings
+
+Setting git username and email:
 
 ```bash
 # Create system config for username and email
@@ -46,14 +48,29 @@ $ git config --global --list
 $ git config --global --list --show-origin
 ```
 
-## Commands
+## Basic commands
+
+* [Add file to stage](#add-file-to-stage)
+* [Commit changes](#commit-changes)
+
+### Add file to stage
 
 ```bash
 # Add file to stage.
 $ git add file_name
+# Add all files to stage
+$ git add .
+```
 
+### Commit changes
+
+```bash
 # Commit.
 $ git commit -m "Commit message"
+
+
+
+
 
 # Rebase.
 # Rebasing is the process of moving or combining a sequence of commits to a new base commit.
