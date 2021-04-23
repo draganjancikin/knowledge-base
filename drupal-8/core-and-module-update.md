@@ -20,11 +20,13 @@ Steps:
   
     ```bash
     # Update Drupal core in Docksal.
-    $ fin composer require drupal/core-recommended:8.9.13 drupal/core:8.9.13 --update-with-all-dependencies
+    $ fin composer require drupal/core-recommended:8.9.14 drupal/core:8.9.14 --update-with-all-dependencies
+    # Update db.
+    $ fin druch updatedb???
     # Clear cache.
     $ fin drush cr
     ```
-    - Check site.
+    * Check site.
     * Commit changes ([Read more](../git/README.md))
 
 5. Then update active modules with security update
