@@ -48,12 +48,12 @@ $ git config --global --list
 $ git config --global --list --show-origin
 ```
 
-## Basic commands
+## Basic Commands
 
 * [Add file to stage](#add-file-to-stage)
 * [Commit changes](#commit-changes)
 
-### Add file to stage
+### Add File to Stage
 
 ```bash
 # Add file to stage.
@@ -62,7 +62,14 @@ $ git add file_name
 $ git add .
 ```
 
-### Commit changes
+### Remove File from Stage
+
+```bash
+# Remove one file from stage.
+$ git reset file_name 
+```
+
+### Commit Changes
 
 ```bash
 # Commit.
