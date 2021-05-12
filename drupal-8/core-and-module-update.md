@@ -20,7 +20,7 @@ Steps:
   
     ```bash
     # Update Drupal core in Docksal.
-    $ fin composer require drupal/core-recommended:8.9.14 drupal/core:8.9.14 --update-with-all-dependencies
+    $ fin composer require drupal/core-recommended:8.9.15 drupal/core:8.9.15 --update-with-all-dependencies
     # Update db.
     $ fin druch updatedb???
     # Clear cache.
