@@ -20,6 +20,7 @@ In progress:
 * [Super Globals](#super-globals)
 * [Classes](#classes)
 * [Namespace and Autoload](#namespase-and-autoload)
+* [Must Know PHP Functions](#must-know-php-functions)
 
 ## Introduction
 
@@ -244,3 +245,10 @@ What is the difference between public, private, and protected?
 ## Namespace and Autoload
 
 <https://www.youtube.com/watch?v=JIfNaqA4STg>
+
+## Must Know PHP Functions
+
+* empty()
+* isset()
+* is_array()
+* toString()
