@@ -20,9 +20,9 @@ Steps:
   
     ```bash
     # Update Drupal core in Docksal.
-    $ fin composer require drupal/core-recommended:8.9.15 drupal/core:8.9.15 --update-with-all-dependencies
+    $ fin composer require drupal/core-recommended:8.9.16 drupal/core:8.9.16 --update-with-all-dependencies
+    $ fin drush updatedb???
     # Update db.
-    $ fin druch updatedb???
     # Clear cache.
     $ fin drush cr
     ```
